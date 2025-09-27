@@ -1,0 +1,64 @@
+name: chatty
+description: "A premium social chat application with glassmorphism UI"
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  get: ^4.6.6
+  
+  # Local Storage
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.2
+  
+  # UI & Animations
+  animate_do: ^3.3.4
+  lottie: ^3.1.2
+  shimmer: ^3.0.0
+  glassmorphism: ^3.0.0
+  flutter_svg: ^2.0.10+1
+  cached_network_image: ^3.3.1
+  google_fonts: ^6.2.1
+  confetti: ^0.7.0
+  
+  # Media & Files
+  image_picker: ^1.0.7
+  file_picker: ^8.0.0+1
+  video_player: ^2.8.6
+  audioplayers: ^6.0.0
+  record: ^6.1.1
+  
+  # Chat Features
+  emoji_picker_flutter: ^2.0.0
+  url_launcher: ^6.2.5
+  share_plus: ^12.0.0
+  permission_handler: ^11.3.1
+  
+  # Network & API
+  dio: ^5.4.3+1
+  connectivity_plus: ^6.0.3
+  
+  # Utils
+  intl: ^0.19.0
+  crypto: ^3.0.3
+  uuid: ^4.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/sounds/
