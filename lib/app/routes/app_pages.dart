@@ -16,7 +16,7 @@ import '../modules/profile/views/profile_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
 import '../modules/settings/views/settings_view.dart';
 import '../modules/notifications/bindings/notifications_binding.dart';
-import '../modules/notifications/views/notifications_view.dart';
+import '../modules/notifications/views/new_notifications_view.dart';
 import '../modules/chat/bindings/chat_detail_binding.dart';
 import '../modules/chat/views/chat_detail_view.dart';
 

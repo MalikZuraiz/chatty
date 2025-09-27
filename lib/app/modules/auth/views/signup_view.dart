@@ -3,10 +3,10 @@ import 'package:chatty/app/core/widgets/custom_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:animate_do/animate_do.dart';
-import 'package:google_fonts/google_fonts.dart';
+
 import '../../../core/theme/app_theme.dart';
-import '../../../core/widgets/glassmorphism_container.dart';
-import '../../../core/widgets/premium_widgets.dart';
+
+
 import '../controllers/auth_controller.dart';
 
 class SignupView extends GetView<AuthController> {
