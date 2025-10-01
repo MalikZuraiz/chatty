@@ -100,7 +100,7 @@ class _ProfileViewState extends State<ProfileView> {
                   CircleAvatar(
                     radius: 40,
                     backgroundImage: const NetworkImage(
-                      'https://api.dicebear.com/7.x/avataaars/png?seed=User',
+                      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
                     ),
                     backgroundColor: AppTheme.neonCyan.withOpacity(0.2),
                   ),

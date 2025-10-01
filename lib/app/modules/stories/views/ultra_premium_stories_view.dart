@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+<<<<<<< Updated upstream
 import 'package:google_fonts/google_fonts.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'dart:math' as math;
+=======
+import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'dart:math' as math;
+import 'ultra_premium_story_viewer.dart';
+>>>>>>> Stashed changes
 
 class UltraPremiumStoriesView extends StatefulWidget {
   const UltraPremiumStoriesView({super.key});
@@ -18,42 +26,66 @@ class _UltraPremiumStoriesViewState extends State<UltraPremiumStoriesView> with 
     StoryUser(
       id: '1',
       name: 'Your Story',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=YourStory',
+=======
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       isYours: true,
       hasUnviewed: false,
     ),
     StoryUser(
       id: '2',
       name: 'Sarah Chen',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Sarah',
+=======
+      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       hasUnviewed: true,
       time: '2h',
     ),
     StoryUser(
       id: '3',
       name: 'Alex Jordan',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Alex',
+=======
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       hasUnviewed: true,
       time: '4h',
     ),
     StoryUser(
       id: '4',
       name: 'Maya Patel',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Maya',
+=======
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       hasUnviewed: false,
       time: '8h',
     ),
     StoryUser(
       id: '5',
       name: 'David Kim',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=David',
+=======
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       hasUnviewed: true,
       time: '10h',
     ),
     StoryUser(
       id: '6',
       name: 'Emma Wilson',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Emma',
+=======
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       hasUnviewed: false,
       time: '12h',
     ),
@@ -417,6 +449,27 @@ class _UltraPremiumStoriesViewState extends State<UltraPremiumStoriesView> with 
   void _viewStory(StoryUser story) {
     if (story.isYours) {
       _createStory();
+<<<<<<< Updated upstream
+=======
+    } else {
+      // Generate realistic story images based on user
+      final List<String> storyImages = [
+        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&h=1400&fit=crop',
+        'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=1400&fit=crop',
+        'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=1400&fit=crop',
+      ];
+      
+      Get.to(
+        () => UltraPremiumStoryViewer(
+          userName: story.name,
+          userAvatar: story.avatar,
+          storyImages: storyImages,
+          initialIndex: 0,
+        ),
+        transition: Transition.fadeIn,
+        duration: const Duration(milliseconds: 300),
+      );
+>>>>>>> Stashed changes
     }
   }
 

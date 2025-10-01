@@ -26,7 +26,7 @@ class _FeedViewState extends State<FeedView> with TickerProviderStateMixin {
     FeedPost(
       id: '1',
       userName: 'Sarah Chen',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Sarah',
+      userAvatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
       timeAgo: '2h ago',
       content: 'Just finished my morning workout! 💪 Feeling energized and ready to tackle the day. Who else is hitting the gym today?',
       imageUrl: 'https://picsum.photos/400/300?random=1',
@@ -39,7 +39,7 @@ class _FeedViewState extends State<FeedView> with TickerProviderStateMixin {
     FeedPost(
       id: '2',
       userName: 'Alex Rodriguez',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Alex',
+      userAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
       timeAgo: '4h ago',
       content: 'Amazing sunset from my office window today! 🌅 Sometimes the best views come when you least expect them.',
       imageUrl: 'https://picsum.photos/400/300?random=2',
@@ -52,7 +52,7 @@ class _FeedViewState extends State<FeedView> with TickerProviderStateMixin {
     FeedPost(
       id: '3',
       userName: 'Maya Patel',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Maya',
+      userAvatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
       timeAgo: '6h ago',
       content: 'Cooked my grandmother\'s secret recipe today! The kitchen smells incredible. Family recipes are the best kind of memories. 👩‍🍳✨',
       likes: 234,
@@ -64,7 +64,7 @@ class _FeedViewState extends State<FeedView> with TickerProviderStateMixin {
     FeedPost(
       id: '4',
       userName: 'Jake Wilson',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Jake',
+      userAvatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
       timeAgo: '8h ago',
       content: 'Late night coding session with some amazing coffee! ☕ Building something cool that I can\'t wait to share with you all.',
       imageUrl: 'https://picsum.photos/400/300?random=4',
@@ -77,7 +77,7 @@ class _FeedViewState extends State<FeedView> with TickerProviderStateMixin {
     FeedPost(
       id: '5',
       userName: 'Emma Thompson',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Emma',
+      userAvatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face',
       timeAgo: '10h ago',
       content: 'Reading is my escape! 📚 Currently diving into this incredible sci-fi novel. What\'s everyone else reading these days?',
       imageUrl: 'https://picsum.photos/400/300?random=5',
@@ -345,7 +345,7 @@ class _FeedViewState extends State<FeedView> with TickerProviderStateMixin {
                   ),
                   child: ClipOval(
                     child: Image.network(
-                      'https://api.dicebear.com/7.x/avataaars/png?seed=User',
+                      'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face',
                       fit: BoxFit.cover,
                       errorBuilder: (context, error, stackTrace) {
                         return Container(

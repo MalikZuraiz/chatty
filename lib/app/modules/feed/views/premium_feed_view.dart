@@ -18,7 +18,11 @@ class _PremiumFeedViewState extends State<PremiumFeedView> with TickerProviderSt
     FeedPost(
       id: '1',
       username: 'Sarah Chen',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Sarah',
+=======
+      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       content: 'Just witnessed the most beautiful sunset at the beach! Nature never fails to amaze me 🌅✨',
       imageUrl: 'https://picsum.photos/400/600?random=1',
       timestamp: '2 hours ago',
@@ -31,7 +35,11 @@ class _PremiumFeedViewState extends State<PremiumFeedView> with TickerProviderSt
     FeedPost(
       id: '2',
       username: 'Alex Jordan',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Alex',
+=======
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       content: 'New project launch! So proud of what our team has accomplished 🚀',
       imageUrl: 'https://picsum.photos/400/500?random=2',
       timestamp: '4 hours ago',
@@ -44,7 +52,11 @@ class _PremiumFeedViewState extends State<PremiumFeedView> with TickerProviderSt
     FeedPost(
       id: '3',
       username: 'Maya Patel',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Maya',
+=======
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       content: 'Exploring the hidden gems of the city. Every corner tells a story! 📸',
       imageUrl: 'https://picsum.photos/400/700?random=3',
       timestamp: '6 hours ago',
@@ -57,7 +69,11 @@ class _PremiumFeedViewState extends State<PremiumFeedView> with TickerProviderSt
     FeedPost(
       id: '4',
       username: 'David Kim',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=David',
+=======
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       content: 'Morning coffee ritual ☕️ Starting the day right!',
       imageUrl: 'https://picsum.photos/400/400?random=4',
       timestamp: '8 hours ago',
@@ -70,7 +86,11 @@ class _PremiumFeedViewState extends State<PremiumFeedView> with TickerProviderSt
     FeedPost(
       id: '5',
       username: 'Emma Wilson',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Emma',
+=======
+      avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       content: 'Fitness journey update! Consistency is key 💪',
       imageUrl: 'https://picsum.photos/400/550?random=5',
       timestamp: '10 hours ago',

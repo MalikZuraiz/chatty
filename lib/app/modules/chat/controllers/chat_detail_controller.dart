@@ -17,18 +17,28 @@ class ChatDetailController extends GetxController {
   var isSelectionMode = false.obs;
   var isOnline = true.obs;
   var lastSeen = DateTime.now().obs;
+  var messageText = ''.obs; // For reactive input button
   
   // Chat info
-  late ChatModel currentChat;
+  ChatModel? currentChat;
   
   @override
   void onInit() {
     super.onInit();
     
+    // Listen to message controller changes
+    messageController.addListener(() {
+      messageText.value = messageController.text;
+    });
+    
     // Get chat from arguments
     if (Get.arguments != null && Get.arguments is ChatModel) {
       currentChat = Get.arguments as ChatModel;
       loadMessages();
+    } else {
+      // Handle error - no chat provided
+      print('ERROR: No chat model provided in arguments');
+      Get.back(); // Go back if no chat is provided
     }
     
     // Auto scroll to bottom on new messages
@@ -53,14 +63,16 @@ class ChatDetailController extends GetxController {
   }
   
   void loadMessages() {
+    if (currentChat == null) return;
+    
     // Demo messages
     final demoMessages = [
       MessageModel(
         id: '1',
         content: 'Hey! How are you doing? 😊',
-        senderId: currentChat.participants.first.id,
-        senderName: currentChat.participants.first.name,
-        senderAvatar: currentChat.participants.first.avatar,
+        senderId: currentChat!.participants.first.id,
+        senderName: currentChat!.participants.first.name,
+        senderAvatar: currentChat!.participants.first.avatar,
         timestamp: DateTime.now().subtract(Duration(hours: 2)),
         status: MessageStatus.seen,
       ),
@@ -75,9 +87,9 @@ class ChatDetailController extends GetxController {
       MessageModel(
         id: '3',
         content: 'That\'s awesome! What kind of workout?',
-        senderId: currentChat.participants.first.id,
-        senderName: currentChat.participants.first.name,
-        senderAvatar: currentChat.participants.first.avatar,
+        senderId: currentChat!.participants.first.id,
+        senderName: currentChat!.participants.first.name,
+        senderAvatar: currentChat!.participants.first.avatar,
         timestamp: DateTime.now().subtract(Duration(hours: 1, minutes: 30)),
         status: MessageStatus.seen,
       ),
@@ -92,9 +104,9 @@ class ChatDetailController extends GetxController {
       MessageModel(
         id: '5',
         content: 'Absolutely! Count me in 🏃‍♀️',
-        senderId: currentChat.participants.first.id,
-        senderName: currentChat.participants.first.name,
-        senderAvatar: currentChat.participants.first.avatar,
+        senderId: currentChat!.participants.first.id,
+        senderName: currentChat!.participants.first.name,
+        senderAvatar: currentChat!.participants.first.avatar,
         timestamp: DateTime.now().subtract(Duration(minutes: 30)),
         status: MessageStatus.seen,
       ),
@@ -303,9 +315,9 @@ class ChatDetailController extends GetxController {
       final message = MessageModel(
         id: DateTime.now().millisecondsSinceEpoch.toString(),
         content: randomResponse,
-        senderId: currentChat.participants.first.id,
-        senderName: currentChat.participants.first.name,
-        senderAvatar: currentChat.participants.first.avatar,
+        senderId: currentChat!.participants.first.id,
+        senderName: currentChat!.participants.first.name,
+        senderAvatar: currentChat!.participants.first.avatar,
         timestamp: DateTime.now(),
         status: MessageStatus.sent,
       );

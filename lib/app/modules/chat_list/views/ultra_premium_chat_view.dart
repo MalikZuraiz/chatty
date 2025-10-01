@@ -4,6 +4,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import '../controllers/chat_list_controller.dart';
 import '../../../data/models/chat_model.dart';
+<<<<<<< Updated upstream
+=======
+import '../../../routes/app_routes.dart';
+>>>>>>> Stashed changes
 
 class UltraPremiumChatView extends StatefulWidget {
   const UltraPremiumChatView({super.key});
@@ -168,7 +172,11 @@ class _UltraPremiumChatViewState extends State<UltraPremiumChatView> {
       itemBuilder: (context, index) {
         final chat = chats[index];
         return GestureDetector(
+<<<<<<< Updated upstream
           onTap: () => Get.toNamed('/chat-detail', arguments: chat),
+=======
+          onTap: () => Get.toNamed(AppRoutes.chatRoom, arguments: chat),
+>>>>>>> Stashed changes
           child: Container(
             margin: const EdgeInsets.only(bottom: 8),
             padding: const EdgeInsets.all(12),
@@ -281,7 +289,11 @@ class _UltraPremiumChatViewState extends State<UltraPremiumChatView> {
       itemBuilder: (context, index) {
         final chat = chats[index];
         return GestureDetector(
+<<<<<<< Updated upstream
           onTap: () => Get.toNamed('/chat-detail', arguments: chat),
+=======
+          onTap: () => Get.toNamed(AppRoutes.chatRoom, arguments: chat),
+>>>>>>> Stashed changes
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(

@@ -16,7 +16,11 @@ class _UltraPremiumFeedViewState extends State<UltraPremiumFeedView> {
     FeedPost(
       id: '1',
       author: 'Sarah Chen',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Sarah',
+=======
+      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       timeAgo: '2h',
       caption: 'Living my best life ✨',
       imageUrl: 'https://picsum.photos/seed/1/800/800',
@@ -27,7 +31,11 @@ class _UltraPremiumFeedViewState extends State<UltraPremiumFeedView> {
     FeedPost(
       id: '2',
       author: 'Alex Jordan',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Alex',
+=======
+      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       timeAgo: '4h',
       caption: 'Adventure awaits! 🌄',
       imageUrl: 'https://picsum.photos/seed/2/800/800',
@@ -38,7 +46,11 @@ class _UltraPremiumFeedViewState extends State<UltraPremiumFeedView> {
     FeedPost(
       id: '3',
       author: 'Maya Patel',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Maya',
+=======
+      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       timeAgo: '6h',
       caption: 'Good vibes only 🌊',
       imageUrl: 'https://picsum.photos/seed/3/800/800',
@@ -49,7 +61,11 @@ class _UltraPremiumFeedViewState extends State<UltraPremiumFeedView> {
     FeedPost(
       id: '4',
       author: 'David Kim',
+<<<<<<< Updated upstream
       avatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=David',
+=======
+      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face',
+>>>>>>> Stashed changes
       timeAgo: '8h',
       caption: 'Sunset magic 🌅',
       imageUrl: 'https://picsum.photos/seed/4/800/800',

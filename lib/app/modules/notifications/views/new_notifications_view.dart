@@ -30,7 +30,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'Hey! Are you free for coffee tomorrow? ☕',
       time: '2 min ago',
       isRead: false,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Sarah',
+      avatarUrl: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
       isOnline: true,
     ),
     ChatNotification(
@@ -40,7 +40,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'Alex: The new feature is ready for testing! 🚀',
       time: '5 min ago',
       isRead: false,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Team',
+      avatarUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face',
       memberCount: 12,
     ),
     ChatNotification(
@@ -50,7 +50,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'Maya: @You what do you think about the new UI?',
       time: '12 min ago',
       isRead: false,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Design',
+      avatarUrl: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
       memberCount: 8,
     ),
     ChatNotification(
@@ -60,7 +60,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'Voice call • 2 minutes',
       time: '1 hour ago',
       isRead: true,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Jake',
+      avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
       isOnline: false,
     ),
     ChatNotification(
@@ -70,7 +70,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'Call ended • 45 minutes',
       time: '2 hours ago',
       isRead: true,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Emma',
+      avatarUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face',
       isOnline: true,
     ),
     ChatNotification(
@@ -80,7 +80,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'David Smith joined the group',
       time: '3 hours ago',
       isRead: true,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Flutter',
+      avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
       memberCount: 156,
     ),
     ChatNotification(
@@ -90,7 +90,7 @@ class _NotificationsViewState extends State<NotificationsView> with TickerProvid
       message: 'Don\'t forget dinner tonight! Love you ❤️',
       time: '4 hours ago',
       isRead: true,
-      avatarUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=Mom',
+      avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face',
       isOnline: false,
     ),
   ];
