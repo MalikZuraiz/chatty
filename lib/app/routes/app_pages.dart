@@ -8,7 +8,7 @@ import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/login_view.dart';
 import '../modules/auth/views/signup_view.dart';
 import '../modules/main/bindings/main_binding.dart';
-import '../modules/main/views/main_view.dart';
+import '../modules/main/views/modern_main_view.dart';
 import '../modules/chat_list/bindings/chat_list_binding.dart';
 import '../modules/chat_list/views/chat_list_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
@@ -52,7 +52,7 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.dashboard,
-      page: () => const MainView(),
+      page: () => ModernMainView(),
       binding: MainBinding(),
       transition: Transition.fadeIn,
     ),
