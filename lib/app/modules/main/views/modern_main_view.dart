@@ -32,11 +32,7 @@ class ModernMainView extends StatelessWidget {
 
   Widget _buildModernBottomNav() {
     return Obx(() => Container(
-<<<<<<< Updated upstream
       height: 70,
-=======
-      height: 80,
->>>>>>> Stashed changes
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
         color: const Color(0xFF1A1A2E),

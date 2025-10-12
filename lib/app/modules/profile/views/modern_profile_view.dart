@@ -105,11 +105,7 @@ class ModernProfileView extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(28),
                   child: CachedNetworkImage(
-<<<<<<< Updated upstream
                     imageUrl: 'https://api.dicebear.com/7.x/avataaars/png?seed=JohnDoe',
-=======
-                    imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
->>>>>>> Stashed changes
                     fit: BoxFit.cover,
                     placeholder: (context, url) => Container(
                       color: Colors.white.withOpacity(0.1),

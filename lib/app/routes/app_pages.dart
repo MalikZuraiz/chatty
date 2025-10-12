@@ -9,11 +9,6 @@ import '../modules/auth/views/login_view.dart';
 import '../modules/auth/views/signup_view.dart';
 import '../modules/main/bindings/main_binding.dart';
 import '../modules/main/views/modern_main_view.dart';
-<<<<<<< Updated upstream
-import '../modules/chat_list/bindings/chat_list_binding.dart';
-import '../modules/chat_list/views/chat_list_view.dart';
-=======
->>>>>>> Stashed changes
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/ultra_premium_profile_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
