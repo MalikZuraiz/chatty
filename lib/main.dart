@@ -52,7 +52,7 @@ void main() async {
     // Run app anyway with minimal error screen
     runApp(MaterialApp(
       home: Scaffold(
-        body: Center(
+        body:  Center(
           child: Text('Error: $e'),
         ),
       ),

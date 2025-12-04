@@ -1,3 +1,4 @@
+import 'package:chatty/app/modules/profile/views/ultra_premium_profile_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -23,7 +24,7 @@ class ModernMainView extends StatelessWidget {
           UltraPremiumChatView(),
           UltraPremiumStoriesView(),
           UltraPremiumFeedView(),
-          ModernProfileView(),
+          UltraPremiumProfileView(),
         ],
       )),
       bottomNavigationBar: _buildModernBottomNav(),
@@ -32,7 +33,7 @@ class ModernMainView extends StatelessWidget {
 
   Widget _buildModernBottomNav() {
     return Obx(() => Container(
-      height: 70,
+      height: 76,
       margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
       decoration: BoxDecoration(
         color: const Color(0xFF1A1A2E),
@@ -92,9 +93,10 @@ class ModernMainView extends StatelessWidget {
       onTap: () => controller.changePage(index),
       behavior: HitTestBehavior.opaque,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         child: Column(
           mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedContainer(
               duration: const Duration(milliseconds: 300),
@@ -109,11 +111,11 @@ class ModernMainView extends StatelessWidget {
                 size: 24,
               ),
             ),
-            const SizedBox(height: 4),
+            const SizedBox(height: 3),
             Text(
               label,
               style: GoogleFonts.inter(
-                fontSize: 11,
+                fontSize: 10.5,
                 fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
                 color: isSelected ? color : Colors.white.withOpacity(0.4),
               ),
