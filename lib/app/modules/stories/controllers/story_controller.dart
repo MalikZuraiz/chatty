@@ -1,7 +1,8 @@
 import 'dart:async';
+import 'package:chatty/app/modules/stories/views/ultra_premium_story_viewer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../views/story_viewer_screen.dart';
+
 
 class StoryController extends GetxController {
   late PageController pageController;
@@ -26,7 +27,7 @@ class StoryController extends GetxController {
     StoryModel(
       id: '1',
       userName: 'Sarah Chen',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Sarah',
+      userAvatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face',
       createdAt: DateTime.now().subtract(const Duration(minutes: 30)),
       storyItems: [
         StoryItem(
@@ -46,7 +47,7 @@ class StoryController extends GetxController {
     StoryModel(
       id: '2',
       userName: 'Alex Jordan',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Alex',
+      userAvatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
       createdAt: DateTime.now().subtract(const Duration(hours: 1)),
       storyItems: [
         StoryItem(
@@ -60,7 +61,7 @@ class StoryController extends GetxController {
     StoryModel(
       id: '3',
       userName: 'Maya Patel',
-      userAvatar: 'https://api.dicebear.com/7.x/avataaars/png?seed=Maya',
+      userAvatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
       createdAt: DateTime.now().subtract(const Duration(hours: 4)),
       storyItems: [
         StoryItem(

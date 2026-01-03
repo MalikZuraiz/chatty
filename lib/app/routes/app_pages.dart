@@ -8,17 +8,15 @@ import '../modules/auth/bindings/auth_binding.dart';
 import '../modules/auth/views/login_view.dart';
 import '../modules/auth/views/signup_view.dart';
 import '../modules/main/bindings/main_binding.dart';
-import '../modules/main/views/main_view.dart';
-import '../modules/chat_list/bindings/chat_list_binding.dart';
-import '../modules/chat_list/views/chat_list_view.dart';
+import '../modules/main/views/modern_main_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
-import '../modules/profile/views/profile_view.dart';
+import '../modules/profile/views/ultra_premium_profile_view.dart';
 import '../modules/settings/bindings/settings_binding.dart';
 import '../modules/settings/views/settings_view.dart';
 import '../modules/notifications/bindings/notifications_binding.dart';
 import '../modules/notifications/views/new_notifications_view.dart';
 import '../modules/chat/bindings/chat_detail_binding.dart';
-import '../modules/chat/views/chat_detail_view.dart';
+import '../modules/chat/views/ultra_premium_chat_detail_view.dart';
 
 import 'app_routes.dart';
 
@@ -52,19 +50,13 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.dashboard,
-      page: () => const MainView(),
+      page: () => ModernMainView(),
       binding: MainBinding(),
       transition: Transition.fadeIn,
     ),
     GetPage(
-      name: AppRoutes.chatList,
-      page: () => const ChatListView(),
-      binding: ChatListBinding(),
-      transition: Transition.rightToLeftWithFade,
-    ),
-    GetPage(
       name: AppRoutes.profile,
-      page: () => const ProfileView(),
+      page: () => const UltraPremiumProfileView(),
       binding: ProfileBinding(),
       transition: Transition.rightToLeftWithFade,
     ),
@@ -82,7 +74,7 @@ class AppPages {
     ),
     GetPage(
       name: AppRoutes.chatRoom,
-      page: () => const ChatDetailView(),
+      page: () => const UltraPremiumChatDetailView(),
       binding: ChatDetailBinding(),
       transition: Transition.rightToLeftWithFade,
     ),

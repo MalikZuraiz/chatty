@@ -9,31 +9,55 @@ import 'app/core/services/storage_service.dart';
 import 'app/core/bindings/initial_binding.dart';
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+  try {
+    print('🚀 Starting Chatty App...');
+    WidgetsFlutterBinding.ensureInitialized();
+    print('✅ Flutter binding initialized');
 
-  // Initialize Hive
-  await Hive.initFlutter();
+    // Initialize Hive
+    print('🔄 Initializing Hive...');
+    await Hive.initFlutter();
+    print('✅ Hive initialized');
 
-  // Initialize services
-  await Get.putAsync(() => StorageService.init());
+    // Initialize services
+    print('🔄 Initializing StorageService...');
+    await Get.putAsync(() => StorageService.init());
+    print('✅ StorageService initialized');
 
-  // Set preferred orientations
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
-  ]);
+    // Set preferred orientations
+    print('🔄 Setting orientations...');
+    await SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]);
+    print('✅ Orientations set');
 
-  // Set system UI overlay style
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: Colors.transparent,
-      systemNavigationBarIconBrightness: Brightness.light,
-    ),
-  );
+    // Set system UI overlay style
+    print('🔄 Setting system UI overlay...');
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.light,
+        systemNavigationBarColor: Colors.transparent,
+        systemNavigationBarIconBrightness: Brightness.light,
+      ),
+    );
+    print('✅ System UI overlay set');
 
-  runApp(const ChattyApp());
+    print('🎉 Running app...');
+    runApp(const ChattyApp());
+  } catch (e, stackTrace) {
+    print('❌ Error in main: $e');
+    print('Stack trace: $stackTrace');
+    // Run app anyway with minimal error screen
+    runApp(MaterialApp(
+      home: Scaffold(
+        body:  Center(
+          child: Text('Error: $e'),
+        ),
+      ),
+    ));
+  }
 }
 
 class ChattyApp extends StatelessWidget {
@@ -41,17 +65,27 @@ class ChattyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Chatty',
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.dark,
-      debugShowCheckedModeBanner: false,
-      initialBinding: InitialBinding(),
-      initialRoute: AppRoutes.splash,
-      getPages: AppPages.routes,
-      defaultTransition: Transition.fadeIn,
-      transitionDuration: const Duration(milliseconds: 300),
-    );
+    print('🏗️ Building ChattyApp widget...');
+    try {
+      return GetMaterialApp(
+        title: 'Chatty',
+        theme: AppTheme.lightTheme,
+        darkTheme: AppTheme.darkTheme,
+        themeMode: ThemeMode.dark,
+        debugShowCheckedModeBanner: false,
+        initialBinding: InitialBinding(),
+        initialRoute: AppRoutes.splash,
+        getPages: AppPages.routes,
+        defaultTransition: Transition.fadeIn,
+        transitionDuration: const Duration(milliseconds: 300),
+        onInit: () {
+          print('✅ GetMaterialApp initialized');
+        },
+      );
+    } catch (e, stackTrace) {
+      print('❌ Error building ChattyApp: $e');
+      print('Stack trace: $stackTrace');
+      rethrow;
+    }
   }
 }
